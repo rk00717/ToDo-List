@@ -1,0 +1,28 @@
+@font-face {
+    font-family: "Otomanopee";
+    src: url("../fonts/OtomanopeeOne-Regular.ttf");
+}
+
+:root {
+    --primary-color: #302AE6;
+    --secondary-color: #536390;
+    --font-color: #424242;
+    --alter-bg: #c2c2c2;
+    --bg-primary-color: #ffffff;
+    --bg-secondary-color: #d4d4d4;
+    --heading-color: #292922;
+    --safe: #1a6e00;
+    --danger: rgb(173, 5, 5);
+}
+
+[data-theme="dark"] {
+    --primary-color: #9A97F3;
+    --secondary-color: #818cab;
+    --font-color: #e1e1ff;
+    --alter-bg: #242424;
+    --bg-primary-color: #131313;
+    --bg-secondary-color: #121222;
+    --heading-color: #aab5d1;
+    --safe: #3cff00;
+    --danger: rgb(255, 15, 15);
+}

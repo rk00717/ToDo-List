@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What to do...</title>
+    <link rel="stylesheet" href="/ToDo-List/css/style.css">
+    <link rel="stylesheet" href="/ToDo-List/css/bootstrap.css">
+    <link rel="stylesheet" href="/ToDo-List/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container d-flex flex-col justify-content-between mt-5">
+        <span class="title m-auto h1">
+            ToDo's
+        </span>
+        <span>
+            <input id="theme_btn" class="theme_button" name="light" type="button" value="&#9788;" data-toggle='tooltip' data-placement='bottom' title='Switch themes' onclick="change_theme(this)">
+        </span>
+    </div>
+    <div class="main_container container d-flex flex-col card mt-5 p-3 row-lg-6">
+        <div class="input_task">
+            <div class=" d-flex flex-col justify-content-between">
+                <span class="h6">What you are going to do?</span>
+                <input id="theme_btn" class="button-common button-border save_btn" type="button" value="Save" data-toggle='tooltip' data-placement='bottom' title='Download the list' onclick="save_data()">
+            </div>            
+            <div class="input_box d-flex flex-col justify-content-center p-2" name="taskTaker">
+                <input id="new_task" class="col" type="text" placeholder="Enter Task...">
+                <input type="button" class="button-common button-border col-1" value="&plus;" data-toggle='tooltip' data-placement='bottom' title='Adds new task.' onclick="add_item()">
+            </div>
+        </div>
+        <div class="taskList p-1.5">
+            <span class="m-auto h6">
+                ToDo's
+            </span>
+            <div id="task_list" class="tasks_view" name="tasks"></div>
+            <input type="button" class="button-common col-12" value="Clear" data-toggle='tooltip' data-placement='bottom' title='Clears all tasks' onclick="clear_items()">
+        </div>
+    </div>
+    <footer class="footer">
+        <div id="empty_alert" class="alert alert-danger p-1 m-auto alert-dismissible fade hide" role="alert">
+            <center>Unable to add blank task. Please fill the field before adding new task.</center>
+        </div>
+    </footer>
+</body>
+<script src="/ToDo-List/js/logic.js"></script>
+<script src="/ToDo-List/js/bootstrap.js"></script>
+<script src="/ToDo-List/js/bootstrap.min.js"></script>
+</html>

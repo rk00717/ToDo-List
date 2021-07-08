@@ -1,0 +1,124 @@
+@import url("values.css");
+
+body{
+    background-color: var(--bg-primary-color) !important;
+    color: var(--font-color) !important;
+    font-size: small !important;
+    overflow: hidden;
+}
+
+.main_container{
+    max-width: 60% !important;
+    background-color: var(--bg-secondary-color) !important;
+}
+
+.taskList{
+    max-width: 99% !important;
+}
+
+.title{
+    padding-left: 2% !important;
+    font-family: "Otomanopee" !important;
+    color: var(--heading-color) !important;
+}
+
+.theme_button{
+    padding-top: 0%;
+    background-color: transparent;
+    border: none;
+    font-size: x-large;
+    color: var(--font-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 10%;
+}
+
+.button{
+    margin-left: 5px;
+    background-color: var(--alter-bg);
+    border: none;
+    font-size: medium;
+    border-radius: 10%;
+}
+
+.button-common{
+    background-color: var(--alter-bg);
+    border: none;
+    color: var(--font-color);
+    font-size: large;
+}
+
+.save_btn{
+    width: 3.3em;
+    margin-right: .4em !important;
+}
+
+.button-border{
+    border: .1px solid var(--primary-color);
+}
+
+.button-safe{
+    color: var(--safe);
+}
+
+.button-danger{
+    color: var(--danger);
+}
+
+#new_task{
+    max-width: 100em !important;
+    background-color: var(--alter-bg);
+    border: none;
+    color: var(--font-color);
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.task_view{
+    background: transparent !important;
+}
+
+.task_view>span{
+    color: var(--font-color);
+}
+
+.tasks_view{
+    background-color: var(--bg-primary-color);
+    margin: auto;
+    height: 80em;
+    max-height: 20em;
+    width: 100%;
+    border-top-left-radius: 10px;
+    overflow-y: scroll;
+}
+
+.mark_done{
+    text-decoration: line-through;
+    opacity: .4;
+}
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    border: .5px solid var(--primary-color);
+    background: var(--alter-bg);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--secondary-color);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-color);
+}
